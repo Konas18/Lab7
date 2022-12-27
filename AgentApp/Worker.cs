@@ -28,7 +28,7 @@ public class Worker : BackgroundService
             {
                 var req = new NewRequest
                 {
-                    Name = _names[new Random().Next(0,_names.Count)], Computer = new Random().Next(-5, 10), NowAgent = _agent.Id
+                    Name = _names[new Random().Next(0,_names.Count)], Computer = new Random().Next(-5, 30), NowAgent = _agent.Id
                 };
                 var resp = await AddNewLoadedApp(req);
                 if (resp.Res)
